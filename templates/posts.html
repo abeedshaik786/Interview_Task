@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posts</title>
+</head>
+<body>
+    Hello
+    {% if adminpost %}
+    {% for post in adminpost %}
+    {{post.Description}}
+    {{post.username}}
+    {% endfor %}
+    {% endif %}
+    {{adminpost.username}} <br>
+    {{adminpost.Description}}
+     <img src="{{adminpost.Img_post}}" alt="">
+  
+
+
+</body>
+</html>
